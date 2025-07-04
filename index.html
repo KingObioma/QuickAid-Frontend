@@ -121,7 +121,7 @@
                     <p><span class="negative-metric-percentage">-2%</span> than last week</p>
                 </div>
             </div>
-            <div class="metric-card" style="margin: 0px;">
+            <div class="metric-card">
                 <div class="top-card">
                     <div class="metric-text">
                         <p class="metric-subtext">Sales</p>
@@ -142,7 +142,9 @@
                 <div class="top-card">
                     <p class="chart-text">Website Views</p>
                     <p class="info">Last Campaign Performance</p>
-                    <canvas id="viewsChart" width="292" height="150"></canvas>
+                    <div class="chart-container">
+                        <canvas id="viewsChart"></canvas>
+                    </div>
                 </div>
                 <div class="bottom-card"><i class="fas fa-clock"></i> campaign sent 2 days ago</div>
             </div>
@@ -150,19 +152,22 @@
                 <div class="top-card">
                     <p class="chart-text">Daily Sales</p>
                     <p class="info"><span class="bold-span">(+15%)</span> increase in today sales</p>
-                    <canvas id="salesChart" width="292" height="150"></canvas>
+                    <div class="chart-container">
+                        <canvas id="salesChart"></canvas>
+                    </div>
                 </div>
                 <div class="bottom-card"><i class="fas fa-clock"></i> updated 4 min ago </div>
             </div>
-            <div class="chart-card" style="margin: 0px;">
+            <div class="chart-card">
                 <div class="top-card">
                     <p class="chart-text">Completed Tasks</p>
                     <p class="info">Last Campaign Performance</p>
-                    <canvas id="tasksChart" width="292" height="150"></canvas>
+                    <div class="chart-container">
+                        <canvas id="tasksChart"></canvas>
+                    </div>
                 </div>
                 <div class="bottom-card"><i class="fas fa-clock"></i> just updated</div>
             </div>
-         
         </div>
 
         <div class="activity">

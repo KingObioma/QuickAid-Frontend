@@ -12,15 +12,13 @@ new Chart(viewsCtx, {
         }]
     },
     options: {
-        responsive: false,
-        plugins: {
-            legend: {
-              display: false // removes the label in the legend
-            }
+        responsive: true,
+        plugins: {legend: { display: false }},
+        scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 20 } }
         }
     }
 });
-
 // Daily Sales Chart
 const salesCtx = document.getElementById('salesChart').getContext('2d');
 new Chart(salesCtx, {
@@ -34,16 +32,14 @@ new Chart(salesCtx, {
             fill: false
         }]
     },
-    options: {
-        responsive: false,
-        plugins: {
-            legend: {
-              display: false // removes the label in the legend
-            }
+   options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 100 } }
         }
     }
 });
-
 // Completed Tasks Chart
 const tasksCtx = document.getElementById('tasksChart').getContext('2d');
 new Chart(tasksCtx, {
@@ -57,12 +53,11 @@ new Chart(tasksCtx, {
             fill: false
         }]
     },
-    options: {
-        responsive: false,
-        plugins: {
-            legend: {
-              display: false // removes the label in the legend
-            }
+   options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 100 } }
         }
     }
 });
