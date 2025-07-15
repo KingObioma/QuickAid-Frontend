@@ -37,46 +37,114 @@
                     </div>
                 </div>
                 <div class="nav-icons">
-                    <i class="fa-solid fa-gear"></i>
-                    <i class="fa-regular fa-bell"></i>
+                    <i id="settings-icon-js" class="fa-solid fa-gear"></i>
+                    <i id="notification-icon-js" class="fa-regular fa-bell"></i>
                     <i class="fa-regular fa-circle-user"></i> 
+                    <button class="hamburger1" id="hamburger1-js">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect y="2" width="20" height="2" fill="#555"/>
+                            <rect y="8" width="20" height="2" fill="#555"/>
+                            <rect y="14" width="20" height="2" fill="#555"/>
+                        </svg>
+                    </button>
+                    <button class="hamburger2" id="hamburger2-js">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <rect x="5" y="2" width="20" height="2" fill="#555"/>
+                            <rect y="8" width="20" height="2" fill="#555"/>
+                            <rect x="5" y="14" width="20" height="2" fill="#555"/>
+                        </svg>                          
+                    </button>
                 </div>
             </section>           
-            
         </nav>
-        <aside class="Sidebar">
+        <aside class="sidebar" id="sidebar-js">
             <div class="top-sidebar">
-                <div class="logo-container">
-                    <a href="#"><img src="assets/images/logo-ct-dark.png" width="26px" alt="QuickAid Logo"></a> 
+                <div class="logo-container" id="logo-container-js">
+                    <a href="#"><img src="assets/images/logo-ct-dark.png" id="logo-image-js" class="logo-image" width="26px" alt="QuickAid Logo"></a> 
+                    <a href="#"><img src="assets/images/logo-ct.png" class="logo-image2" width="26px" alt="QuickAid Logo"></a> 
                     <a href="#" class="logo-name">              
                         Creative Tim
                     </a>
                 </div>
                 <ul class="sidebar-links">
-                    <li class="active-sidebar"><a href="#"><i class="fa-solid fa-table-cells sidebar-icons"></i>Dashboard</a></li>
+                    <li id="active-sidebar-js1" class="active-sidebar black"><a href="#"><i class="fa-solid fa-table-cells sidebar-icons active"></i>Dashboard</a></li>
+                    <li id="active-sidebar-js2" class="active-sidebar navy"><a href="#"><i class="fa-solid fa-table-cells sidebar-icons active"></i>Dashboard</a></li>
                     <li><a href="#"><i class="fa-regular fa-square-check sidebar-icons"></i> Tables</a></li>
                     <li><a href="#"><i class="fa-regular fa-file-lines sidebar-icons"></i> Billing</a></li>
                     <li><a href="#"><i class="fa-solid fa-vr-cardboard sidebar-icons"></i> Virtual Reality</a></li>
                     <li><a href="#"><i class="fa-solid fa-language sidebar-icons"></i> RTL</a></li>
                     <li><a href="#"><i class="fa-regular fa-bell sidebar-icons"></i> Notifications</a></li>          
-                    <p class="section-title">ACCOUNT PAGES</p>
+                    <p class="section-title" id="section-title-js">ACCOUNT PAGES</p>
                     <li><a href="#"><i class="fa-regular fa-user sidebar-icons"></i> Profile</a></li>
                     <li><a href="#"><i class="fa-solid fa-right-to-bracket sidebar-icons"></i> Sign In</a></li>
                     <li><a href="#"><i class="fa-regular fa-clipboard sidebar-icons"></i> Sign Up</a></li>
+                    <div style="height: 10px;"></div>
                 </ul>
             </div>
-            <div>
-                <button class="documentation">Documentation</button>
+            <div class="bottom-sidebar" id="bottom-sidebar-js">
+                <button class="documentation" id="documentation-js">Documentation</button>
                 <button class="Upgrade-btn">Upgrade to pro</button>
             </div>
         </aside>
-    </div>
+        <aside class="settings-sidebar" id="settings-sidebar-js">
+            <div class="inner-settings-sidebar">
+                <div class="top-settings">
+                    <div>
+                        <p class="settings-title">Material UI Configurator</p>
+                        <p class="settings-info">See our dashboard options.</p>
+                    </div>
+                    <div>
+                        <span class="close-sidebar" id="close-sidebar-js">&times;</span>
+                    </div>
+                </div>
+                <div class="bottom-settings">
+                    <p class="sidebar-colors">Sidebar Colors</p>
+                    <div class="color-options">
+                        <button id="color-btn-pink-js" class="color-btn pink"></button>
+                        <button id="color-btn-black-js" class="color-btn black"></button>
 
+                        <button id="color-btn-navy-js" class="color-btn navy"></button>
+
+                        <button id="color-btn-blue-js" class="color-btn blue"></button>
+                        <button id="color-btn-green-js" class="color-btn green"></button>
+                        <button id="color-btn-orange-js" class="color-btn orange"></button>
+                        <button id="color-btn-red-js" class="color-btn red"></button>
+                    </div>
+                    <p class="Sidenav-type">Sidenav Type</p>
+                    <p class="Sidenav-info">Choose between different sidenav types.</p>
+                    <div class="type-options">
+                        <button id="type-btn-dark-js" class="type-btn">Dark</button>
+                        <button id="type-btn-trans-js" class="type-btn">Transparent</button>
+                        <button id="type-btn-white-js" class="type-btn active">White</button>
+                    </div>
+                    <div class="toggle-container">
+                        <div class="toggle-group">
+                            <p>Navbar Fixed</p>
+                            <label class="switch">
+                                <input id="fix-navbar-js" type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>   
+                        <div class="toggle-group">
+                            <p>Light / Dark</p>
+                            <label class="switch">
+                                <input id="light-dark-js" type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="download-btn">Free Download</button>
+                <button class="doc-btn">View documentation</button>
+            </div>        
+        </aside>
+    </div>
     <div class="dashboard-intro">
         <h3 class="intro-title">Dashboard</h3>
         <p class="intro-subtext">Check the sales, value and bounce rate by country.</p>
     </div>
-
     <div class="dashboard">
         <div class="performance-overview">
             <div class="metric-card">
@@ -118,7 +186,7 @@
                     </div>
                 </div>
                 <div class="bottom-card">
-                    <p><span class="negative-metric-percentage">-2%</span> than last week</p>
+                    <p><span class="negative-metric-percentage">-2%</span> than yesterday</p>
                 </div>
             </div>
             <div class="metric-card">
@@ -136,7 +204,6 @@
                 </div>
             </div>
         </div>
-
         <div class="charts">
             <div class="chart-card">
                 <div class="top-card">
@@ -169,7 +236,6 @@
                 <div class="bottom-card"><i class="fas fa-clock"></i> just updated</div>
             </div>
         </div>
-
         <div class="activity">
             <div class="projects">
                 <div class="projects-header">
@@ -189,15 +255,15 @@
                                 <img src="assets/images/small-logos/logo-xd.svg" class="table-logo" alt="table-logo">Material XD Version
                             </td>
                             <td>
-                                <img src="assets/images/team-1.jpg" class="team-image" alt="team-1">
-                                <img src="assets/images/team-2.jpg" class="team-image" alt="team-2">
-                                <img src="assets/images/team-3.jpg" class="team-image" alt="team-3">
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="team-4">
+                                <img src="assets/images/team-1.jpg" class="team-image" title="Ryan Tompson" alt="team-1">
+                                <img src="assets/images/team-2.jpg" class="team-image" title="Romina Hadid" alt="team-2">
+                                <img src="assets/images/team-3.jpg" class="team-image" title="Alexander Smith" alt="team-3">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="team-4">
                             </td>
                             <td class="budget">$14,000</td>
                             <td class="Completion">60%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill blue-bg" style="width: 60%"></div>
+                                    <div class="progress-bar-fill blue" style="width: 60%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -206,13 +272,13 @@
                                 <img src="assets/images/small-logos/logo-atlassian.svg" class="table-logo" alt="table-logo">Add Progress Track
                             </td>
                             <td>
-                                <img src="assets/images/team-2.jpg" class="team-image" alt="team-5">
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="team-6">
+                                <img src="assets/images/team-2.jpg" class="team-image" title="Romina Hadid" alt="team-5">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="team-6">
                             </td>
                             <td class="budget">$3,000</td>
                             <td class="Completion">10%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill blue-bg" style="width: 10%"></div>
+                                    <div class="progress-bar-fill blue" style="width: 10%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -221,13 +287,13 @@
                                 <img src="assets/images/small-logos/logo-slack.svg" class="table-logo" alt="table-logo">Fix Platform Errors
                             </td>
                             <td>
-                                <img src="assets/images/team-3.jpg" class="team-image" alt="team-8">
-                                <img src="assets/images/team-1.jpg" class="team-image" alt="team-9">
+                                <img src="assets/images/team-3.jpg" class="team-image" title="Alexander Smith" alt="team-8">
+                                <img src="assets/images/team-1.jpg" class="team-image" title="Ryan Tompson" alt="team-9">
                             </td>
                             <td class="budget">Not Set</td>
                             <td class="Completion">100%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill green-bg" style="width: 100%"></div>
+                                    <div class="progress-bar-fill green" style="width: 100%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -236,15 +302,15 @@
                                 <img src="assets/images/small-logos/logo-spotify.svg" class="table-logo" alt="table-logo">Launch our Mobile App
                             </td>
                             <td>
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="user-1">
-                                <img src="assets/images/team-3.jpg" class="team-image" alt="user-2">
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="user-3">
-                                <img src="assets/images/team-1.jpg" class="team-image" alt="user-4">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="user-1">
+                                <img src="assets/images/team-3.jpg" class="team-image" title="Alexander Smith" alt="user-2">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="user-3">
+                                <img src="assets/images/team-1.jpg" class="team-image" title="Ryan Tompson" alt="user-4">
                             </td>
                             <td class="budget">$20,500</td>
                             <td class="Completion">100%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill green-bg" style="width: 100%"></div>
+                                    <div class="progress-bar-fill green" style="width: 100%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -253,12 +319,12 @@
                                 <img src="assets/images/small-logos/logo-jira.svg" class="table-logo" alt="table-logo">Add the New Pricing Page
                             </td>
                             <td>
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="user-5">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="user-5">
                             </td>
                             <td class="budget">$500</td>
                             <td class="Completion">25%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill blue-bg" style="width: 25%"></div>
+                                    <div class="progress-bar-fill blue" style="width: 25%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -267,13 +333,13 @@
                                 <img src="assets/images/small-logos/logo-invision.svg" class="table-logo" alt="table-logo">Redesign New Online Shop
                             </td>
                             <td>
-                                <img src="assets/images/team-1.jpg" class="team-image" alt="user-6">
-                                <img src="assets/images/team-4.jpg" class="team-image" alt="user-7">
+                                <img src="assets/images/team-1.jpg" class="team-image" title="Ryan Tompson" alt="user-6">
+                                <img src="assets/images/team-4.jpg" class="team-image" title="Jessica Doe" alt="user-7">
                             </td>
                             <td class="budget">$2,000</td>
                             <td class="Completion">40%
                                 <div class="progress-bar">
-                                    <div class="progress-bar-fill blue-bg" style="width: 40%"></div>
+                                    <div class="progress-bar-fill blue" style="width: 40%"></div>
                                 </div>
                             </td>
                         </tr>
@@ -312,14 +378,16 @@
                         <p class="subtitle">18 DEC 4:54 AM</p>
                     </div>
                     <div class="order-paragraph">
-                         <div class="event-icon dark"><i class="fa-solid fa-money-bill-wave"></i></div>
+                         <div class="event-icon black"><i class="fa-solid fa-money-bill-wave"></i></div>
                         <p class="order-title">New order #9583120</p>
                         <p class="subtitle">17 DEC</p>
                     </div>
                 </div>
             </div>
+        </div>        
+        <div id="settings-icon2-js" class="settings-icon-container">
+            <i class="fa-solid fa-gear"></i>
         </div>
-
         <footer>
             <div class="top-footer">
                 <p>© 2025, made with by <span>Creative Tim</span> for a better web.</p>
@@ -330,11 +398,10 @@
                 <a href="#">Blog</a>
                 <a href="#">License</a>
             </div>
-           
         </footer>
-    </div>  
-
+    </div> 
 <script src="assets/node_modules/chart.js/dist/chart.umd.min.js"></script>
 <script src="assets/Js/chart.js"></script>
+<script src="assets/Js/main.js"></script>
 </body>
 </html>
