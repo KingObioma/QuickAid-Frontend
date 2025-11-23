@@ -133,6 +133,20 @@ p{
   margin-top: -20px;
   margin-left: -90px;
 }
+
+.form-container{
+  z-index: 2;
+  height: 420px;
+  width: 360px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: white;
+  margin-top: -20px;
+  margin-left: -90px;
+}
+
 .form-header{
   font-size: 12px;
   width: 315px;
