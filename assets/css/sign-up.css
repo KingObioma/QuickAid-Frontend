@@ -154,8 +154,6 @@ form{
 form{
   gap: 20px;
   display: flex;
-  align-items: start;
-  flex-direction: column;
 }
 form input{
   height: 35px;
